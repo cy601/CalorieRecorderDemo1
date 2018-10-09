@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/lib/graphs.com.graphs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="Manage Calories"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/beginData"
+        android:text="EDIT" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="98dp"
+        android:text="Begin"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="161dp"
+        android:text="End"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/queryBtn"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editBtn"
+        android:layout_marginTop="221dp"
+        android:text="QUERY" />
+
+    <EditText
+        android:id="@+id/beginData"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/endData"
+        android:layout_alignTop="@+id/textView2"
+        android:ems="10"
+        android:inputType="date"
+        android:text="2018-1-1"
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:id="@+id/endData"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="2018-5-1"
+        android:textAlignment="textEnd" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="360dp"
+        android:layout_height="306dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
+        app:seriesColor="#ee0000"
+        app:seriesType="line" />
+
+</RelativeLayout>
